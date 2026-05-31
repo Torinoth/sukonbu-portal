@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>すこん部員のなにがし</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #222;
+      letter-spacing: 0.02em;
+    }
+
+    header p {
+      margin-top: 0.4rem;
+      font-size: 0.95rem;
+      color: #888;
+      letter-spacing: 0.05em;
+    }
+
+    main {
+      flex: 1;
+      max-width: 800px;
+      width: 100%;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .card-arrow {
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      color: #4a90d9;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #aaa;
+      border-top: 1px solid #e0e0e0;
+      background-color: #fff;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>すこん部員のなにがし</h1>
+    <p>sukonbu.xyz</p>
+  </header>
+
+  <main>
+    <div class="card-grid">
+
+      <a class="card" href="https://pmm.sukonbu.xyz" target="_blank" rel="noopener noreferrer">
+        <div class="card-title">積みログ</div>
+        <div class="card-desc">プラモデルのコレクション管理ツール</div>
+        <div class="card-arrow">開く &rarr;</div>
+      </a>
+
+      <a class="card" href="#" target="_blank" rel="noopener noreferrer">
+        <div class="card-title">使い方</div>
+        <div class="card-desc">積みログの使い方ガイド</div>
+        <div class="card-arrow">開く &rarr;</div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2024 sukonbu.xyz
+  </footer>
+
+</body>
+</html>
